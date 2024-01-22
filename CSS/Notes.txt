@@ -1,0 +1,46 @@
+---------------------------------Notes --------
+
+<!--
+
+Follow Tailwind CSS installation process - and for run the code 
+
+in terminal - npx tailwindcss -i ./src/input.css -o ./CSS/output.css --watch  
+(--watch means it will watch in current time and we don't need to submit again & again this command)
+--------------------------------------------------------Notes ---------------------------------
+
+<h1 class="text-5xl font-serif grid place-content-center h-screen">Tailwind CSS</h1>
+
+grid: Indicates that the element is using CSS Grid layout.
+place-content-center: Specifies that the content within the grid container should be centered both horizontally and 
+vertically.
+h-screen: Sets the height of the element to be equal to the height of the viewport (screen).  without only text wil not set to middle
+
+<div class="min-h-screen flex flex-col items-center justify-center"> ----------------
+
+min-h-screen to the outermost container, which ensures that the container takes at least the full height of the viewport.
+flex to make the container a flex container.
+items-center to center the items vertically.
+justify-center to center the items horizontally.
+
+rounded-3xl: Applies rounded corners to the image with a radius equivalent to 3xl based on Tailwind CSS sizing conventions.
+class="mb-5": This sets a margin-bottom of 5 (you can adjust the value) to create space below nested div.
+
+hover:bg-green-500 means that when the button is being hovered over,its background color will change to green shade defined by the 500 intensity level.
+hovered means - when you move cursor on button. after hovering if you want change font color or anything then you have to use hover:(then property)
+otherwise it will not work and give warning..
+
+<img class="h-20 w-full md:w-full md:h-1/2 md:mt-20 object-cover" />
+
+md:w-full: On medium-sized screens and larger (md and up), the width of the image is set to 100%. This means that the image 
+will take the full width of its container on screens with a width equal to or greater than the medium breakpoint.
+
+md:h-1/2: On medium-sized screens and larger (md and up), the height of the image is set to 50% of its container. This means
+that the image will take up half of the height of its container on screens with a width equal to or greater than the medium 
+breakpoint.
+
+md:mt-20: On medium-sized screens and larger (md and up), this sets a top margin of 20 units. The mt stands for margin-top.
+
+object-cover: This is not specific to any breakpoint but is a general class that is commonly used with images. It ensures 
+that the image covers its container while maintaining its aspect ratio. Parts of the image may be cropped to achieve this.
+
+-->
